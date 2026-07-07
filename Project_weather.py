@@ -5,14 +5,10 @@ import requests
 try:
   # calling the Nominatim tool and create Nominatim class
   loc = Nominatim(user_agent="Geopy Library")
-  
   # entering the location name
   getLoc = loc.geocode("Delhi")
-  
   # printing address
   print("you requested for weather around the following area {} ".format(getLoc.address))
-  
-  
   # printing latitude and longitude
   #print(type(getLoc.latitude)) float values
   #print("Latitude = ", getLoc.latitude, "\n")
