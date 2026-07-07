@@ -19,7 +19,7 @@ print("you requested for weather around the following area {} ".format(getLoc.ad
 #print("Longitude = ", getLoc.longitude)
 lattitude=str(getLoc.latitude)
 longitude=str(getLoc.longitude)
-url="https://api.openweathermap.org/data/2.5/weather?lat="+lattitude+"&lon="+longitude+"&appid=9b772cabe7e72fe5eef56f4fcff96239"
+url="https://api.openweathermap.org/data/2.5/weather?lat="+lattitude+"&lon="+longitude+"&appid=<insert your api key from open weather app here>"
 #print(url)
 response = requests.get(url)
 #print(response.json())
